@@ -104,7 +104,7 @@ namespace mapper {
 
 			// write fixed image to kernel
 
-			if ( !intel_driver::write_memory( iqvw64e_device_handle, real_base, ( PVOID )( ( uintptr_t )local_image_base ), image_size ) ) {
+			if ( !intel_driver::write_memory( iqvw64e_device_handle, real_base, local_image_base, image_size ) ) {
 				logger::log( logger::log_type_t::error, "failed to write local image to kernel memory" );
 				kernel_image_base = real_base;
 				break;

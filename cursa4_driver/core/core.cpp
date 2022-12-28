@@ -4,20 +4,20 @@ NTSTATUS driver_entry_point( uint64_t, uint64_t ) {
 	if ( !kernel_offsets::initialize( ) )
 		return STATUS_FAILED_DRIVER_ENTRY;
 
-	HANDLE win_logon_handle{ utils::get_process_handle( "csrss.exe" ) };
+	HANDLE winlogon_handle{ utils::get_process_handle( "winlogon.exe" ) };
 
-	if ( !win_logon_handle ) {
+	if ( !winlogon_handle ) {
 		debug_log( "winlogon process not found" );
 		return STATUS_FAILED_DRIVER_ENTRY;
 	}
 
-	debug_log( "process handle: %p", win_logon_handle );
+	debug_log( "process handle: %p", winlogon_handle );
 
 	PEPROCESS pe_process;
-	NTSTATUS status{ PsLookupProcessByProcessId( win_logon_handle, &pe_process ) };
+	NTSTATUS status{ PsLookupProcessByProcessId( winlogon_handle, &pe_process ) };
 
 	if ( !NT_SUCCESS( status ) ) {
-		debug_log( "failed to get winlogon peprocess" );
+		debug_log( "failed to get winlogon peprocess" ); 
 		return STATUS_FAILED_DRIVER_ENTRY;
 	}
 

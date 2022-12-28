@@ -329,7 +329,7 @@ namespace intel_driver {
 		}
 
 		// restore the pointer
-		write_to_read_only_memory( device_handle, kernel_nt_add_atom, original_kernel_function, sizeof( kernel_injected_jmp ) );
+		write_to_read_only_memory( device_handle, kernel_nt_add_atom, original_kernel_function, sizeof kernel_injected_jmp );
 		return true;
 	}
 
