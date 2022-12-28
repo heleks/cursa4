@@ -32,7 +32,6 @@ namespace utils {
 			ExFreePoolWithTag( modules , 0 );
 
 		return module_base;
-	
 	}
 
 	void* get_system_module_export( const char* module_name, const char* routine_name ) {
