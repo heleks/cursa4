@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="sources\core">
+      <UniqueIdentifier>{a8165fa9-f8a3-4e29-8f4d-6bd055abad32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\utils">
+      <UniqueIdentifier>{80ddb82c-421c-4337-9b84-478218deba85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\debug">
+      <UniqueIdentifier>{3d4a8053-d700-40e0-80bd-31d0522a48ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\core.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.hpp">
+      <Filter>headers\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\kernel_offsets.hpp">
+      <Filter>headers\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\log.hpp">
+      <Filter>headers\debug</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

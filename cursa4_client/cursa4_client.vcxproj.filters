@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="sources">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="sources\core">
+      <UniqueIdentifier>{5345ec2e-c8de-40ae-92e5-111a65130d63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\utils">
+      <UniqueIdentifier>{54ef9a37-4f46-466c-8a79-12d4edddf268}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\intel">
+      <UniqueIdentifier>{64033def-ea73-49a8-9aed-8a5fce971833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dependencies">
+      <UniqueIdentifier>{899013d4-f032-470a-87b4-8427246969fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\debug">
+      <UniqueIdentifier>{f75f4daa-0855-425c-9a8e-3c6303a46696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{7647ab43-6465-443b-9ca7-2e8c1dd8675e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers\mapper">
+      <UniqueIdentifier>{a1233275-1e78-4350-8a35-49f28570f191}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="core\core.cpp">
+      <Filter>sources\core</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="includes.hpp">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\service.hpp">
+      <Filter>headers\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="intel\intel_driver.hpp">
+      <Filter>headers\intel</Filter>
+    </ClInclude>
+    <ClInclude Include="utils\utils.hpp">
+      <Filter>headers\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="debug\logger.hpp">
+      <Filter>headers\debug</Filter>
+    </ClInclude>
+    <ClInclude Include="resources\driver.hpp">
+      <Filter>resources</Filter>
+    </ClInclude>
+    <ClInclude Include="mapper\mapper.hpp">
+      <Filter>headers\mapper</Filter>
+    </ClInclude>
+    <ClInclude Include="mapper\portable_executable.hpp">
+      <Filter>headers\mapper</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
